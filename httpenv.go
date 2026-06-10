@@ -15,7 +15,8 @@ func serve(w http.ResponseWriter, r *http.Request) {
 		env[keyval[0]] = keyval[1]
 	}
 
-    env["Thomas"] = "Rasmussen"
+	env["Thomas"] = "Rasmussen"
+	env["NeuerKey"] = "Neuer Wert"
 
 	bytes, err := json.Marshal(env)
 	if err != nil {
